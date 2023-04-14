@@ -1,0 +1,35 @@
+
+header {
+    background-image: url(../img/fondo.jpg);
+    background-size: 31.25rem;
+}
+
+.card{
+    display: inline-block;
+}
+
+.card-img-top{
+    height: 13.375rem;
+}
+
+footer{
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    height: 15.625rem;
+}
+
+#fondofooter{
+    margin-top: 5.3125rem;
+}
+
+#icono{
+    margin-top: 6.0625rem;
+}
+
+.modal-title{
+    margin: 0 auto;
+}
+
+.modal-body{
+    padding: 0.625rem;
+}

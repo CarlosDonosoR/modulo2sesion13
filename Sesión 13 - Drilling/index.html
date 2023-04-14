@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nimrodel Pub Restaurant</title>
+    <link rel="icon" href="../Sesión 12 - Drilling/Assets/img/n.png">
+
+    <!--link a font awesome-->
+    <script src="https://kit.fontawesome.com/30e15a1812.js" crossorigin="anonymous"></script>
+
+    <!--link bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+    <!--link CSS-->
+    <link rel="stylesheet" href="../sesión 12 - Drilling/Assets/css/style2.css">
+
+</head>
+
+<body>
+
+    <!--comienzo header-->
+    <header class="container-fluid mw-100">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="">
+                    <nav class="navbar">
+                        <div>
+                            <a class="navbar-brand" href="">
+                                <img src="../sesión 12 - Drilling/Assets/img/n.png" alt="Logo Nimrodel" width="40"
+                                    height="40">
+                            </a>
+                        </div>
+                    </nav>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Nuestros Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="nosotros" class="nav-link active" href="#">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="link1" class="nav-link active" aria-current="page"
+                                href="#formulario1">Comuniquémonos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="link2" class="nav-link active" aria-current="page" href="#formulario2">Reservar</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--texto principal-->
+    <section class="mt-5 container-fluid">
+        <p class="h3 display-4 text-black-50 text-center fw-bold">
+            Nimrodel Pub Restaurant
+        </p>
+    </section>
+
+    <!--destacados-->
+    <section class="text-center mt-5 container-fluid">
+        <div class="d-inline-block">
+            <p class="h4 dislay-5 text-black bt-black text-center fw-bold border-top border-4 border-dark">
+                Destacado de la Semana
+            </p>
+        </div>
+    </section>
+
+    <!--cards de productos-->
+    <section class="text-center container-sm mt-5">
+        <div id="card1" class="card" style="width: 18rem;">
+            <img src="../sesión 12 - Drilling/Assets/img/bebidas.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p id="cardtext1" class="card-text">Bebidas: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Itaque cumque asperiores
+                    minus! Excepturi,
+                    expedita?</p>
+            </div>
+        </div>
+        <div id="card2" class="card" style="width: 18rem;">
+            <img src="../sesión 12 - Drilling/Assets/img/tablas.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p id="cardtext2" class="card-text">Tablas: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Itaque cumque asperiores
+                    minus! Excepturi,
+                    expedita?</p>
+            </div>
+        </div>
+        <div id="card3" class="card" style="width: 18rem;">
+            <img src="../sesión 12 - Drilling/Assets/img/shop.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p id="cardtext3" class="card-text">Shops: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Itaque cumque asperiores
+                    minus! Excepturi,
+                    expedita?</p>
+            </div>
+        </div>
+    </section>
+
+    <!--formulario 1-->
+    <div id="formulario1" class="container-sm mt-5 text-center w-50 bg-secondary text-light" style="display: block;">
+        <div>
+            <p class="h5 fw-bold pt-3 mb-3 text-light">Comuniquémonos</p>
+        </div>
+        <form>
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input id="nombre" type="text" class="form-control" placeholder="María Vargas"
+                    pattern="/^[Aa-Zzñáéíóú]+(\s[Aa-Zzñáéíóú]+)?$/i">
+            </div>
+            <div class="mb-3">
+                <label for="correo" class="form-label">Correo</label>
+                <input id="correo" type="email" class="form-control me-2" placeholder="mariavargas@correo.com">
+            </div>
+            <div class="mb-3">
+                <label for="telefono" class="form-label">Teléfono</label>
+                <input id="telefono" type="text" class="form-control me-2" placeholder="95123456789" required>
+            </div>
+            <div class="mb-3">
+                <label for="motivo" class="form-label">Motivo</label>
+                <select class="form-select me-2" id="motivo" required>
+                    <option value="1">Reclamos</option>
+                    <option value="2">Consultas</option>
+                    <option value="3">Sugerencias</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="cuadro" class="form-label"></label>
+                <textarea class="form-control" id="cuadro" rows="5"></textarea>
+            </div>
+            <button id="boton1" type="submit" class="btn btn-primary mb-2">ENVIAR</button>
+        </form>
+    </div>
+
+    <!--formulario 2-->
+    <div id="formulario2" class="container-sm mt-5 text-center w-50 bg-secondary text-light" style="display: block;">
+        <div>
+            <p class="h5 fw-bold pt-3 mb-3">Reservar</p>
+        </div>
+        <form>
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input id="nombre2" type="text" class="form-control me-2" name="nombre" placeholder="María Vargas"
+                    required>
+            </div>
+            <div class="mb-3">
+                <label for="correo" class="form-label">Correo</label>
+                <input id="correo2" type="email" class="form-control me-2" name="correo"
+                    placeholder="mariavargas@correo.com" required>
+            </div>
+            <div class="mb-3">
+                <label for="telefono" class="form-label">Teléfono</label>
+                <input id="telefono2" type="text" class="form-control me-2" name="telefono" placeholder="95123456789"
+                    required>
+            </div>
+            <div class="mb-3">
+                <label for="fecha" class="form-label">Fecha</label>
+                <input type="date" class="form-control me-2" name="fecha" required>
+            </div>
+            <div class="mb-3">
+                <label for="hora" class="form-label">Hora</label>
+                <input type="time" class="form-control me-2" name="hora" required>
+            </div>
+            <div class="mb-3">
+                <label for="cantidad" class="form-label">Cantidad de Asistentes</label>
+                <input id="asistentes" type="number" class="form-control me-2" name="cantidad" required>
+            </div>
+            <button id="boton2" type="submit" class="btn btn-primary mb-2">ENVIAR</button>
+        </form>
+    </div>
+
+    <!--carousel-->
+    <section id="carousel1" class="container-fluid carousel slide mt-5 p-0">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../sesión 12 - Drilling/Assets/img/vino.jpg" class="d-block w-100" alt="Vino"
+                    style="height: 28.125rem;">
+            </div>
+            <div class="carousel-item">
+                <img src="../sesión 12 - Drilling/Assets/img/chorillana.jpg" class="d-block w-100" alt="Chorrillana"
+                    style="height: 28.125rem;">
+            </div>
+            <div class="carousel-item">
+                <img src="../sesión 12 - Drilling/Assets/img/mojito.jpg" class="d-block w-100" alt="Mojito"
+                    style="height: 28.125rem;">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </section>
+
+
+    <!--inicio footer-->
+    <footer class="container-fluid">
+        <div class="h-75 row">
+            <p id="fondofooter" class="text-end text-light col pe-0">Todos los derechos reservados</p>
+            <i id="icono" class="fa-regular fa-registered fa-xs col text-start ps-2" style="color: white;"></i>
+        </div>
+    </footer>
+
+    <!--Modal 1-->
+    <div id="myModal" class="modal">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-black text-light">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title"></h4>
+                    <button type="button" id="btncerrar" class="btn" data-bs-dismiss="modal">
+                        <i class="fa-solid fa-xmark" style="color: #ffffff; background-color: black;"></i>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <p id="descripcion" class="text-center"></p>
+                    <img id="imgbody" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal 2-->
+    <div id="myModal2" class="modal">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-black text-light">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <button type="button" id="btncerrar2" class="btn" data-bs-dismiss="modal">
+                        <i class="fa-solid fa-xmark" style="color: #ffffff; background-color: black;"></i>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <!--inicio carousel-->
+                    <section id="carousel2" class="container-fluid carousel slide mt-1 p-0">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <h3 class="text-center">Nimrodel Pub Restaurant</h3>
+                                <p id="descripcion2" class="text-center">
+                                    “Nimrodel Significa “dama de la cueva blanca”. Fue una elfa silvana que vivió
+                                    durante la Tercera Edad del Sol en el bosque de Lothlórien. En honor a su nombre, se
+                                    acuña
+                                    Nimrodel al río que nace en las Montañas Nubladas”.
+                                </p>
+                                <img src="../Sesión 12 - Drilling/Assets/img/IMG2.jpg" class="d-block w-100" alt=""
+                                    style="height: 27.125rem;">
+                            </div>
+                            <div class="carousel-item">
+                                <p class="text-center">
+                                    “Nimrodel Pub Restaurant es un oasis de calma y diversión, lleno de rincones
+                                    acogedores
+                                    en donde se resalta la belleza de su decoración élfica.
+                                    Es un lugar ideal para visitar solo o acompañado, disfrutar una tarde con amigos,
+                                    terminar
+                                    el día después del trabajo o almorzar con tu familia.
+                                    Puedes probar nuestras tradicionales tablas, en todas sus variedades y que nos han
+                                    otorgado reconocimiento dentro de la cultura gastronómica.
+                                    También puedes disfrutar nuestras cervezas de fabricación propia, con sabores que te
+                                    llevarán a un mágico mundo.”
+                                </p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../Sesión 12 - Drilling/Assets/img/IMG1.jpg" class="d-block w-100"
+                                    alt="" style="height: 27.125rem;">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel2"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel2"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </section>
+                    <!--fin carousel-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--fin modal 2-->
+
+    <!--link bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+    <!--link a jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <!--link a javascript-->
+    <script src="../sesión 12 - Drilling/Assets/js/logica.js"></script>
+</body>
+
+</html>
